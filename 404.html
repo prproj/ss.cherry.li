@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redirecting...</title>
+    <meta http-equiv="refresh" content="0; url=https://i.e-z.host/">
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             var path = window.location.pathname;
             if (path) {
                 var filename = path.split("/").pop();
                 var targetUrl = 'https://i.e-z.host/' + filename;
-
-                window.location.href = targetUrl;
+                document.location.href = targetUrl;
             } else {
                 document.body.innerHTML = "<p>Invalid file or no file specified.</p>";
             }
